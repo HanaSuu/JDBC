@@ -14,7 +14,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1 align='center'>Xin's User Managment System</h1><br>   
+        <h1 align='center'>Xin's User Management System</h1><br>   
         <div align='center' class="container">  
             <div class="row">  
                 <div class="col-2">
@@ -69,8 +69,8 @@
                                         <button type="button" onclick="edit_user('${user.email}')" class="btn btn-link">Edit</button>
                                         <form method="POST">
                                         <input type="hidden" name="type" value="delete" />
-                                        <input type="hidden" name="email" value="${user.email}" />
-                                        <input type="submit" value="Delete" class="btn btn-link" />
+                                        <input type="hidden" name="email" value="${user.email}"/>
+                                        <input type="submit" value="Delete" class="btn btn-link"/>
                                         </form>
                                     </td>
                                 </tr>
@@ -110,13 +110,13 @@
 
         <script>
             function edit_user(email) {
-                let tr =document.getElementById(email).children;
-                let fn = tr[1].innerHTML;
-                let ln = tr[2].innerHTML;
-                let role = tr[3].getAttribute("data-role");
+                var tr = document.getElementById(email).children;
+                var first_name = tr[1].innerHTML;
+                var last_name = tr[2].innerHTML;
+                var role = tr[3].getAttribute("data-role");
                 document.getElementById("edit_email").value = email;
-                document.getElementById("edit_first").value = fn;
-                document.getElementById("edit_last").value = ln;
+                document.getElementById("edit_first").value = first_name;
+                document.getElementById("edit_last").value = last_name;
                 document.getElementById("edit_role").value = role;
             }
             

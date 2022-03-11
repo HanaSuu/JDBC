@@ -42,6 +42,7 @@
                     </div>
                         <input value="Save" type="submit" class="btn btn-primary">                           
                     </form>
+
                 </div>
                 <div class="col-8">
                     <h2>Manage Users</h2>       

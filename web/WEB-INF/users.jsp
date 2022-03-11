@@ -107,7 +107,6 @@
                 </div>
             </div>
         </div>
-
         <script>
             function edit_user(email) {
                 var tr = document.getElementById(email).children;

@@ -110,13 +110,13 @@
 
         <script>
             function edit_user(email) {
-                let tr =document.getElementById(email).children;
-                let fn = tr[1].innerHTML;
-                let ln = tr[2].innerHTML;
-                let role = tr[3].getAttribute("data-role");
+                var tr =document.getElementById(email).children;
+                var first_name = tr[1].innerHTML;
+                var last_name = tr[2].innerHTML;
+                var role = tr[3].getAttribute("data-role");
                 document.getElementById("edit_email").value = email;
-                document.getElementById("edit_first").value = fn;
-                document.getElementById("edit_last").value = ln;
+                document.getElementById("edit_first").value = first_name;
+                document.getElementById("edit_last").value = last_name;
                 document.getElementById("edit_role").value = role;
             }
             
